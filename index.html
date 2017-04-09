@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ask Me Another!</title>
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- jQuery CDN -->
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+</head>
+<body>
+	<header class="jumbotron headerStyles"><h3>Ask Me Another!</h3></header>
+	<div class="game-start">
+		<p class="instructions">
+			Instructions: When the game begins, you will have 15 seconds to answer the question presented. After the time has passed, or you answered the question, whether correctly or incorrectly, the game will advance to the next question. After all questions have been answered, your score will be given.
+		</p>
+		<button onclick="Start();">Begin Game</button>
+	</div>
+	<section id="question-block" class="container">
+		<div id="question" class="row"></div>
+		<div class="answers row"></div>
+		<div class="answers row"></div>
+		<div class="answers row"></div>
+		<div class="answers row"></div>
+	</section>
+</body>
+</html>
