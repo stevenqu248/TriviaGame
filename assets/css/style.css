@@ -4,3 +4,25 @@
 	color: red;
 	text-align: center;
 }
+
+.resultStyles
+{
+	text-align: center;
+	color: #88FF88;
+}
+
+.answers
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.answers:hover
+{
+	background-color: yellow;
+}
+
+body
+{
+	background-image: url(../images/playstation.png);
+}

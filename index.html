@@ -16,14 +16,23 @@
 		<p class="instructions">
 			Instructions: When the game begins, you will have 15 seconds to answer the question presented. After the time has passed, or you answered the question, whether correctly or incorrectly, the game will advance to the next question. After all questions have been answered, your score will be given.
 		</p>
-		<button onclick="Start();">Begin Game</button>
+		<button id="start-btn" onclick="Initialize();">Begin Game</button>
 	</div>
 	<section id="question-block" class="container">
-		<div id="question" class="row"></div>
-		<div class="answers row"></div>
-		<div class="answers row"></div>
-		<div class="answers row"></div>
-		<div class="answers row"></div>
+		<div class="row">
+			<div class="col-md-6" id="question"></div>
+			<div class="col-md-6" id="timer"></div>
+		</div>
+		<div id="answer-1" class="row answers"></div>
+		<div id="answer-2" class="row answers"></div>
+		<div id="answer-3" class="row answers"></div>
+		<div id="answer-4" class="row answers"></div>
+	</section>
+	<section id="results-block">
+		<header class="jumbotron resultStyles" id="resultHeader"><h3>Results</h3></header>
+		<div id="results-body">
+			
+		</div>
 	</section>
 </body>
 </html>
