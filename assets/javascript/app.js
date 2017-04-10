@@ -40,7 +40,7 @@ var questionIndex = -1;
 var questionNumber = 0;
 var numRight = 0;
 var guess;
-var secondsRemaining = 15;
+var secondsRemaining = 25;
 var timer;
 var showingAnswer = false;
 
@@ -75,7 +75,7 @@ function Initialize()
 	numRight = 0;
 	questionNumber = 0;
 	questionsNotAsked = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-	secondsRemaining = 15;
+	secondsRemaining = 25;
 	showingAnswer = false;
 	$("#timer").show();
 	$("#timer").html("Time Remaining: " + secondsRemaining.toString());
@@ -174,7 +174,7 @@ function decrementResultsTimer()
 
 function resetTimer()
 {
-	secondsRemaining = 10;
+	secondsRemaining = 25;
 	clearTimeout(timer);
 	$("#timer").html("Time Remaining: " + secondsRemaining.toString());
 	timer = setTimeout(decrementTimer, 1000);
@@ -199,7 +199,7 @@ function showQuestionResults(gotItRight)
 		$("#results-body").html((secondsRemaining == 0? "Time's up! ":"Incorrect! ") + "The correct answer is: " + answers[questionIndex]);
 	}
 
-	secondsRemaining = 3;
+	secondsRemaining = 4;
 	clearTimeout(timer);
 	timer = setTimeout(decrementResultsTimer, 1000);
 }
